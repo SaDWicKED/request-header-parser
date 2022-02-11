@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 // your first API endpoint... 
 app.get("/api/whoami", (req, res) => {
   return res.json({
-    ipaddress: req.headers.host, 
+    ipaddress: req.headers['x-forwarded-for']?.split(',').shift() || req.socket?.remoteAddress, 
     language: req.headers['accept-language'], 
     software: req.headers['user-agent']});
 });
