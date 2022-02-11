@@ -1,0 +1,17 @@
+{
+  "name": "request-header-parser",
+  "version": "1.0.0",
+  "description": "Request Header Parser Microservice",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Silvio Sol",
+  "engines": {
+    "node": "16.x"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2"
+  }
+}
